@@ -1,34 +1,16 @@
-*{
-  padding: 0%;
-  margin: 0;
-}
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
 
-#homePage-poster {
-  height: 70vh;
-  background-image: url("./utils/homePage-poster2.jpg");
-  color: white;
-  text-align: center;
-  
-  /* padding-top: 60px; */
-  box-sizing: border-box;
-  
-}
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
 
-#container1{
-/* background-color: aqua; */
-position: relative;
-top: 30%;
-}
-
-#homePage-mainHeading {
-  font-size: 50px;
-  margin-bottom: 20px;
-}
-
-
-#homePage-mainHeading + p {
-  font-size: 20px;
-  margin-bottom: 20px;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .btn{
@@ -85,101 +67,23 @@ top: 30%;
   grid-template-columns: repeat(4,1fr);
   gap: 20px;
 }
-
-#pd-galary .card{
-  border: 1px solid black;
-  border-radius: 10px;
-  overflow: hidden;
-  
-
-
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
 }
 
-.card-img{
-  background-image: url("./utils/homePage-poster.jpg");
-  height: 200px;
-  
-}
-
-.card .card-dtl{
-  padding: 20px 10px;
-}
-
-.card-info{
-  
-}
-
-.container {
-  width: 80%;
-  margin: 0 auto;
-  padding: 20px;
-}
-.title {
-  text-align: center;
-  margin-bottom: 20px;
-}
-.offers {
-  display: flex;
-  justify-content: space-between;
-}
-.offer {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 30%;
-  padding: 20px;
-  box-sizing: border-box;
-  position: relative;
-}
-.offer img {
-  width: 100%;
-  border-radius: 10px;
-}
-.offer .discount {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background-color: orange;
-  color: #fff;
-  padding: 5px 10px;
-  border-radius: 5px;
-}
-.offer .price {
-  font-size: 24px;
-  margin: 10px 0;
-}
-.offer .details {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
-}
-.offer .details div {
-  display: flex;
-  align-items: center;
-}
-.offer .details div img {
-  margin-right: 5px;
-}
-.offer .location {
-  margin-bottom: 10px;
-}
-.offer .view-details {
-  background-color: orange;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-  border-radius: 5px;
-  text-decoration: none;
-  display: block;
-}
-
-#Article-container{
-  display: flex;
-  background-color: aqua;
-  width: 80%;
-  margin-left: 10%;
-  box-sizing: border-box;
-}
-#Article-img{
-
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
 }
