@@ -5,7 +5,7 @@ function SignInwithGoogle() {
     function googleLogin() {
       const provider = new GoogleAuthProvider();
       signInWithPopup(auth, provider).then(async (result) => {
-        console.log(result);
+        // console.log(result);
         const user = result.user;
         if (result.user) {
           alert('Sign in successfull')

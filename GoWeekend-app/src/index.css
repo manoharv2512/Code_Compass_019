@@ -1,0 +1,89 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.btn{
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: large;
+  cursor: pointer;
+}
+
+#popular-destination{
+  /* background-color: aqua; */
+  padding:10%
+
+}
+#pd-heading{
+  display: flex;
+  /* background-color: burlywood; */
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#left-pd-heading h1{
+  font-size: 40px;
+  
+}
+
+
+#left-pd-heading p{
+  color: gray;
+  
+}
+
+#right-pd-heading{
+  display: flex;
+  /* background-color:blue; */
+  width: 70px;
+  justify-content: space-between;
+}
+
+.arrow{
+  border: 3px solid black;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  color: black;
+  cursor: pointer;
+  background-color: lightgray;
+}
+
+#pd-galary{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
